@@ -1,31 +1,103 @@
-* {
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+:root {
+    --h: 100vh;
+}
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     height: 100vh;
+    font-size: 16px;
+}
+h1{
+    display: block;
+    background-color: rgb(143, 100, 14);
+    height: fit-content;
+    font-size: 4em;
+    font-weight: bold;
+    padding-top: .25em;
+    padding-bottom: .1em;
+    color: white;
+}
+.main{
+    width: 100%;
+    height: fit-content;
+    min-height: calc(100vh - 109px);
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    justify-content: center;
+    background: rgb(240, 240, 240);
+    background-image: url(O4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
 }
-
-.social-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.icon {
-    font-size: 2.5rem;
-    color: #333;
-    transition: color 0.3s;
-    text-decoration: none;
+.icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: #fff;
+    margin: 20px;
     text-align: center;
+    font-size: 50px;
+    line-height: 100px;
+    font-family: sans-serif;
+    overflow: hidden;
+    box-shadow: 5px 10px 5px 5px rgba(0, 0, 0, .8);
+    transition: all .3s ease-out;
+}
+.icon:hover{
+    width: 400px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.icon:hover i{
+    color: #fff;
+}
+.icon .fa-facebook-f{
+    color: #1A6ED8;
+}
+.fb:hover{
+    background: #1A6ED8;
+}
+.icon .fa-x-twitter{
+    color: #000000;
+}
+.twt:hover{
+    background: #121010;
+}
+.icon .fa-linkedin-in{
+    color: #0077B5;
+}
+.lnk:hover{
+    background: #0077B5;
+}
+.icon .fa-github{
+    color: #000080;
+}
+.git:hover{
+    background: #000080;
+}
+.icon .fa-youtube{
+    color: #FE0000;
+}
+.yt:hover{
+    background: #FE0000;
 }
 
-.icon:hover {
-    color: #0077ff;
+/* responsive */
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .main{
+        flex-direction: column;
+    }
 }
