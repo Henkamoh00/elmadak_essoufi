@@ -15,20 +15,10 @@ body {
     height: 100vh;
     font-size: 16px;
 }
-h1{
-    display: block;
-    background-color: rgb(143, 100, 14);
-    height: fit-content;
-    font-size: 4em;
-    font-weight: bold;
-    padding-top: .25em;
-    padding-bottom: .1em;
-    color: white;
-}
 .main{
     width: 100%;
     height: fit-content;
-    min-height: calc(100vh - 109px);
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,35 +54,27 @@ h1{
 .icon:hover i{
     color: #fff;
 }
-.icon .fa-facebook-f{
-    color: #1A6ED8;
-}
-.fb:hover{
-    background: #1A6ED8;
-}
-.icon .fa-x-twitter{
+
+.icon .fa-tiktok{
     color: #000000;
 }
-.twt:hover{
-    background: #121010;
+.tiktok:hover{
+    background: linear-gradient(45deg, #25F4EE, #FE2C55, #000000);
+
 }
-.icon .fa-linkedin-in{
-    color: #0077B5;
+
+.icon .fa-instagram{
+    color: #e1306c;
 }
-.lnk:hover{
-    background: #0077B5;
+.instagram:hover{
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
 }
-.icon .fa-github{
-    color: #000080;
+
+.icon .fa-map-location-dot{
+    color: #EA4335;
 }
-.git:hover{
-    background: #000080;
-}
-.icon .fa-youtube{
-    color: #FE0000;
-}
-.yt:hover{
-    background: #FE0000;
+.map:hover{
+    background: #34A853;
 }
 
 /* responsive */
