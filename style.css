@@ -77,6 +77,21 @@ body {
     background: #34A853;
 }
 
+.icon .fa-motorcycle{
+    color: #FF9800;
+}
+
+.delivery:hover{
+    background: #FF9800;
+}
+
+.icon .fa-mobile-screen-button{
+    color: #4285F4;
+}
+
+.app:hover{
+    background: #4285F4;
+}
 /* responsive */
 @media only screen and (min-width: 320px) and (max-width: 991px) {
     .main{
