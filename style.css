@@ -15,6 +15,16 @@ body {
     height: 100vh;
     font-size: 16px;
 }
+
+nav{
+    position: absolute;
+}
+nav img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 10px;
+}
 .main{
     width: 100%;
     height: fit-content;
