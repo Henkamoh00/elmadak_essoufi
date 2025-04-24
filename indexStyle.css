@@ -16,6 +16,10 @@ body {
     font-size: 16px;
 }
 
+span{
+    color: #fff;
+}
+
 nav{
     position: absolute;
     right: 0;
@@ -37,8 +41,8 @@ nav img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(240, 240, 240);
-    background-image: url(bg.jpg);
+    background-color: rgb(240, 240, 240);
+    background-image: url(images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -109,6 +113,17 @@ nav img{
 .app:hover{
     background: #4285F4;
 }
+
+.icon .fa-globe{
+    color: #fae20d;
+}
+
+.web:hover{
+    background: #5c351f;
+}
+
+
+
 /* responsive */
 @media only screen and (max-width: 991px) {
     .main{

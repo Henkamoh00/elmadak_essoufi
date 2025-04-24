@@ -16,7 +16,7 @@ body {
 .hero {
     position: relative;
     height: 100vh;
-    background: url('photos/shawata.jpg') center/cover no-repeat;
+    background: url('photos/shawata2.png') center/cover no-repeat;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -58,11 +58,17 @@ body {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 10px;
+    -webkit-text-stroke-color: var(--brown); /* تحدد لون الخط المحيط بالنص */
+    -webkit-text-stroke-width: medium; /* thin medium thick تحدد سمك الخط المحيط بالنص وتأخذ اما قيمة عددية بالبيكسل او غيره من الوحدات او احد القيم الثلاث */
+
 }
 
 .subtitle {
-    font-size: 20px;
-    color: var(--orange);
+    font-size: 25px;
+    color: var(--brown);
+    -webkit-text-stroke-color: var(--orange); /* تحدد لون الخط المحيط بالنص */
+    -webkit-text-stroke-width: thin; /* thin medium thick تحدد سمك الخط المحيط بالنص وتأخذ اما قيمة عددية بالبيكسل او غيره من الوحدات او احد القيم الثلاث */
+
 }
 
 .section {
