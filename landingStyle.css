@@ -13,10 +13,22 @@ body {
     color: var(--brown);
 }
 
+a {
+    all: unset;
+    display: block;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    line-height: 1.2
+}
+
 .hero {
     position: relative;
     height: 100vh;
-    background: url('photos/shawata2.png') center/cover no-repeat;
+    background: url('photos/delicious1.jpg') center/cover no-repeat;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -58,25 +70,23 @@ body {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 10px;
-    -webkit-text-stroke-color: var(--brown); /* تحدد لون الخط المحيط بالنص */
-    -webkit-text-stroke-width: medium; /* thin medium thick تحدد سمك الخط المحيط بالنص وتأخذ اما قيمة عددية بالبيكسل او غيره من الوحدات او احد القيم الثلاث */
+    -webkit-text-stroke-color: var(--brown);
+    -webkit-text-stroke-width: medium;
+    text-shadow: 6px 8px 30px var(--yellow);
 
 }
 
 .subtitle {
     font-size: 25px;
-    color: var(--brown);
-    -webkit-text-stroke-color: var(--orange); /* تحدد لون الخط المحيط بالنص */
-    -webkit-text-stroke-width: thin; /* thin medium thick تحدد سمك الخط المحيط بالنص وتأخذ اما قيمة عددية بالبيكسل او غيره من الوحدات او احد القيم الثلاث */
-
+    font-weight: bold;
+    color: var(--orange);
+    -webkit-text-stroke-color: var(--brown);
+    -webkit-text-stroke-width: thin;
+    text-shadow: 4px 8px 30px var(--yellow);
 }
 
 .section {
     padding: 60px 20px;
-}
-
-.container {
-    max-width: 1000px;
     margin: auto;
 }
 
@@ -94,7 +104,7 @@ body {
 }
 
 .feature-img {
-    max-width: 100%;
+    max-width: 500px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -106,9 +116,11 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    width: fit-content;
+    margin: auto;
 }
 
-.flex-2 > div {
+.flex-2>div {
     flex: 1 1 45%;
 }
 
@@ -119,7 +131,7 @@ body {
     gap: 20px;
 }
 
-.flex-3 > div {
+.flex-3>div {
     flex: 1 1 250px;
     max-width: 300px;
     text-align: center;
