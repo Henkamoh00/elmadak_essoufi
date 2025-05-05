@@ -71,7 +71,7 @@ a {
     margin-top: 0;
     margin-bottom: 10px;
     -webkit-text-stroke-color: var(--brown);
-    -webkit-text-stroke-width: medium;
+    -webkit-text-stroke-width: 0.5px;
     text-shadow: 6px 8px 30px var(--yellow);
 
 }
@@ -79,9 +79,8 @@ a {
 .subtitle {
     font-size: 25px;
     font-weight: bold;
-    color: var(--orange);
     -webkit-text-stroke-color: var(--brown);
-    -webkit-text-stroke-width: thin;
+    -webkit-text-stroke-width: 0.5px;
     text-shadow: 4px 8px 30px var(--yellow);
 }
 
@@ -109,6 +108,17 @@ a {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.food-menu {
+    padding: 0px!important;
+    height: fit-content;
+}
+
+.food-menu img{
+    width: 80vw;
+    display: block;
+    margin: auto;
 }
 
 .flex-2 {
@@ -195,6 +205,10 @@ footer img {
 
     .flex-2 {
         gap: 40px;
+    }
+
+    .food-menu img{
+        width: 100vw;
     }
 
 }
