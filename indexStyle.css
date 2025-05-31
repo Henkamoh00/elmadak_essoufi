@@ -98,6 +98,14 @@ nav img{
     background: #34A853;
 }
 
+.icon .fa-facebook-f{
+    color: #1A6ED8;
+}
+.fb:hover{
+    background: #3b5998;
+;
+}
+
 .icon .fa-motorcycle{
     color: #FF9800;
 }
